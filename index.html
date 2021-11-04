@@ -4,13 +4,195 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Halloween</title>
-    <link rel="stylesheet" href="./style.css" />
+    <!--! Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!--! Box Icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--! Swiper CSS-->
+    <link rel="stylesheet" href="./assets/css/swiper-css.css" />
+    <!--! CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Halloween Fright Night</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Chalo bulawa aaya hai</h1>
-    </div>
-    <script src="./script.js"></script>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <img src="./assets/images/logo.png" alt="..." class="nav__logo-img" />
+          Halloweenie
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#candy">Candy</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#new">New</a></li>
+            <a href="#" class="button button--ghost">Support</a>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <img src="assets/images//nav-img.png" alt="" class="nav__img" />
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Home -->
+      <section class="home container" id="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    class="img home__img"
+                    src="./assets/images/home1-img.png"
+                  />
+                  <div class="home__indicator"></div>
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Jack-O'-Lantern</h4>
+                    <span class="home__details-subtitle"
+                      >The Living Pumpkin</span
+                    >
+                  </div>
+                  <div class="home__data">
+                    <h3 class="home__subtitle">#1 Top Scariest Ghost</h3>
+                    <h1 class="home__title">
+                      UOOOO <br />
+                      TRICK OR <br />
+                      TREAT!!
+                    </h1>
+                    <p class="home__description">
+                      Hi, I'm Jack, people used to call me "Stingy Jack". I was
+                      forever doomed to roam the Earth alone, because of my deal
+                      with the devil.
+                    </p>
+
+                    <div class="home__buttons">
+                      <a href="#" class="button"> Book Now </a>
+                      <a href="#" class="button--link button--flex"
+                        >Track Record
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    class="img home__img"
+                    src="./assets/images/home2-img.png"
+                  />
+                  <div class="home__indicator"></div>
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Adino & Grahami</h4>
+                    <span class="home__details-subtitle"
+                      >No words can describe them</span
+                    >
+                  </div>
+                  <div class="home__data">
+                    <h3 class="home__subtitle">#2 top Best duo</h3>
+                    <h1 class="home__title">
+                      BRING BACK <br />
+                      MY COTTON <br />
+                      CANDY
+                    </h1>
+                    <p class="home__description">
+                      Adino steals cotton candy from his brother and eats them
+                      all in one bite, a hungry beast. Grahami can no longer
+                      contain his anger towards Adino.
+                    </p>
+
+                    <div class="home__buttons">
+                      <a href="#" class="button"> Book Now </a>
+                      <a href="#" class="button--link button--flex"
+                        >Track Record
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    class="img home__img"
+                    src="./assets/images/home3-img.png"
+                  />
+                  <div class="home__indicator"></div>
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Captain Sem</h4>
+                    <span class="home__details-subtitle"
+                      >Veteran Spooky Ghost</span
+                    >
+                  </div>
+                  <div class="home__data">
+                    <h3 class="home__subtitle">
+                      #3 Its a Spooky Veteran Ghost
+                    </h3>
+                    <h1 class="home__title">
+                      RESPAWN <br />
+                      THE SPOOKY <br />
+                      SKULL
+                    </h1>
+                    <p class="home__description">
+                      In search for cute little puppy, Captain Sem has come back
+                      from his tragic death. With his hogwarts certified power
+                      he promise to be a hero for all of ghostkind.
+                    </p>
+
+                    <div class="home__buttons">
+                      <a href="#" class="button"> Book Now </a>
+                      <a href="#" class="button--link button--flex"
+                        >Track Record
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Category -->
+      <section class="category section"></section>
+      <!-- About -->
+      <section class="section about" id="about"></section>
+    </main>
+
+    <footer class="footer section"></footer>
+
+    <!--! Scroll Up Js-->
+
+    <!--! Scroll Reveal JS-->
+
+    <!--! Swiper JS-->
+    <script src="./assets/js/swiper-js.js"></script>
+    <!--! Main JS-->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -26,10 +26,11 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// ! Home Swiper
+// ! Swiper Js
 
 let swiper = new Swiper(".home-swiper", {
-    spaceBetween: 30,
+
+    spaceBetween: 16,
     loop: 'true',
 
     pagination: {
@@ -37,3 +38,58 @@ let swiper = new Swiper(".home-swiper", {
         clickable: 'true',
     },
 });
+
+let newSwiper = new Swiper(".new-swiper", {
+    spaceBetween: 30,
+    loop: 'true',
+    centeredSlides: 'true',
+    slidesPerView: 'auto',
+
+});
+
+
+// ! Change background header
+
+function scrollHeader() {
+    const header = document.getElementById('header')
+
+    if (this.scrollY >= 50) {
+        header.classList.add('scroll-header');
+    }
+    else {
+        header.classList.remove('scroll-header');
+    }
+}
+window.addEventListener('scroll', scrollHeader)
+
+
+// ! Scroll section active link
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+        } else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+// ! Show scroll up icon
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up')
+    if (this.scrollY >= 460)
+        scrollUp.classList.add('show-scroll')
+    else
+        scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
